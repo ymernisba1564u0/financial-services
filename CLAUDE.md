@@ -50,5 +50,5 @@ Run `python3 scripts/check.py` before committing — it lints every manifest, ve
 - I'm primarily using the `vertical-plugins/equities/` and `vertical-plugins/fixed-income/` verticals — ignoring `partner-built/` for now
 - Run `python3 scripts/check.py && python3 scripts/sync-agent-skills.py` together as a pre-commit habit; easy to forget the sync step after editing skills
 - Shortcut alias I added to my shell: `alias fsi-check='python3 scripts/check.py && python3 scripts/sync-agent-skills.py'`
-- Upstream merges: pull from `anthropics/financial-services` into `main`, then rebase my `personal` branch on top — keeps personal notes out of upstream PRs
-- Note to self: `validate.py` and `orchestrate.py` in `scripts/` are worth reading through — haven't explored them yet but they look useful for testing multi-agent flows locally
+- Upstream merges: pull from `anthropics/financial-services` into `main`, then rebase my `personal` branch on top to keep notes/aliases separate from any upstream changes
+- `validate.py` is worth running occasionally too (not just `check.py`) — it catches schema-level issues in `agent.yaml` files that `check.py` doesn't cover
