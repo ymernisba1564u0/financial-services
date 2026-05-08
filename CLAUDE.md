@@ -44,3 +44,8 @@ Run `python3 scripts/check.py` before committing — it lints every manifest, ve
 1. Edit markdown files directly - changes take effect immediately
 2. Test commands with `/plugin:command-name` syntax
 3. Skills are invoked automatically when their trigger conditions match
+
+## Personal Notes
+
+- I'm primarily using the `vertical-plugins/equities/` and `vertical-plugins/fixed-income/` verticals — ignoring `partner-built/` for now
+- Run `python3 scripts/check.py && python3 scripts/sync-agent-skills.py` together as a pre-commit habit; easy to forget the sync step after editing skills
