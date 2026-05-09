@@ -9,6 +9,8 @@ Everything here is available **two ways from one source**: install it as a [Clau
 
 > [!NOTE]
 > **Personal fork** — I'm using this primarily to explore the equity research and PE valuation workflows. The agents I'm actively testing are Market Researcher, Earnings Reviewer, and Valuation Reviewer. Notes on what's working (and what isn't) for my use case are in [NOTES.md](./NOTES.md).
+>
+> **Priority order for my use case:** Earnings Reviewer → Market Researcher → Valuation Reviewer. Haven't touched the IB-side agents (Pitch Agent, Meeting Prep) yet — probably out of scope for what I'm doing.
 
 What's in the repo:
 
@@ -28,6 +30,4 @@ Each agent plugin is **self-contained** — it bundles the skills it uses, so in
 | **Research & modeling** | **[Market Researcher](./plugins/agent-plugins/market-researcher)** | Sector or theme → industry overview, competitive landscape, peer comps, ideas shortlist |
 | | **[Earnings Reviewer](./plugins/agent-plugins/earnings-reviewer)** | Earnings call + filings → model update → note draft |
 | | **[Model Builder](./plugins/agent-plugins/model-builder)** | DCF, LBO, 3-statement, comps — live in Excel |
-| **Fund admin & finance ops** | **[Valuation Reviewer](./plugins/agent-plugins/valuation-reviewer)** | Ingests GP packages, runs valuation template, stages LP reporting |
-| | **[GL Reconciler](./plugins/agent-plugins/gl-reconciler)** | Finds breaks, traces root cause, routes for sign-off |
-| | **[Month-End Closer](./plugins/agent-plugins/month-end-closer)** | Accruals, roll-forwards, varianc
+| **Fund admin & finance ops** | **[Valuation Reviewer](./plugins/agent-plugins/valuation-re
